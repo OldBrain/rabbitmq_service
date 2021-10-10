@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/News-Consumer/pom.xml" />
         <option value="$PROJECT_DIR$/News-Producer/pom.xml" />
         <option value="$PROJECT_DIR$/ru.avbugorov.robbitmqtest.domain/NewsConnection/pom.xml" />
+        <option value="$PROJECT_DIR$/subscriptionManagement/pom.xml" />
       </set>
     </option>
   </component>
