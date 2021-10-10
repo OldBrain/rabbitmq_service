@@ -26,33 +26,38 @@ public class StartNewsClientApp {
 // Сделайте возможность подписчикам подписываться и
 // отписываться от статей по темам в процессе работы приложения
 // *
-
-//        routingKeyList.add("prog.java");
-        subscriptionMenu();
-//        routingKeyList.add();
-        try {
-            newsListener.subscribe(routingKeyList);
-        } catch (IOException e) {
-            e.printStackTrace();
+        while (1<2) {
+            subscriptionMenu();
+            try {
+                newsListener.subscribe(routingKeyList);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-        System.out.println("NewsClient start ok!");
+
     }
 
     private static void subscriptionMenu() {
+        String key;
+
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите команду 'set_topic <key>, где <key> раздел новостей например  <<set_topic php>> ");
-        String key = scanner.nextLine();
-
-        System.out.println(key.split(" ")[0]);
-        System.out.println(key.split(" ")[1]);
+         key = scanner.nextLine();
 
 
         if (key.split(" ")[0].equals("set_topic")) {
-            routingKeyList.add(key.split("_")[1]);
+            String setKey = key.split(" ")[1];
+            routingKeyList.add(setKey);
+            System.out.println("Вы подписаны на новости >" +setKey);
+            System.out.println("Ваш список подписок >" + routingKeyList.toString());
         }
-        if (key.split(" ")[1].equals("del_topic")) {
-            routingKeyList.remove(key.split("_")[1]);
-            newsListener.unsubscribe(key.split("_")[1]);
+        if (key.split(" ")[0].equals("del_topic")) {
+            String delKey = key.split(" ")[1];
+            routingKeyList.remove(delKey);
+            newsListener.unsubscribe(delKey);
+            System.out.println("Вы отписаны от новостей >" +delKey);
+            System.out.println("Ваш список подписок >" + routingKeyList.toString());
         }
 
 //        routingKeyList.add("prog.java");
