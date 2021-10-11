@@ -7,6 +7,14 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/News-Consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/News-Producer/pom.xml" />
+        <option value="$PROJECT_DIR$/ru.avbugorov.robbitmqtest.domain/NewsConnection/pom.xml" />
+        <option value="$PROJECT_DIR$/subscriptionManagement/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

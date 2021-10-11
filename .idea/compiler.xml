@@ -6,14 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="News-Producer" />
-        <module name="Newc-Consumer" />
-        <module name="NewsConnection" />
+        <module name="newsConsumer" />
+        <module name="newsProducer" />
+        <module name="domainNewsConnection" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Newc-Consumer" target="11" />
       <module name="News-Connection" target="11" />
       <module name="News-Consumer" target="11" />
+      <module name="News-Producer" target="11" />
+      <module name="newsConnection" target="11" />
+      <module name="subscriptionManagement" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

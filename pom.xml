@@ -9,9 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>Newc-Consumer</module>
-        <module>News-Producer</module>
-        <module>NewsConnection</module>
+        <module>newsConsumer</module>
+        <module>newsProducer</module>
+        <module>domainNewsConnection</module>
+        <module>subscriptionManagement</module>
     </modules>
 
     <properties>
@@ -26,7 +27,16 @@
             <artifactId>amqp-client</artifactId>
             <version>5.7.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -9,11 +9,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Newc-Consumer</artifactId>
+    <groupId>ru.avbugorov.robbitmqtest.newsproduser</groupId>
+    <artifactId>newsProducer</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>ru.avbugorov.robbitmqtest.domain.newsconnection</groupId>
+            <artifactId>domainNewsConnection</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
