@@ -30,16 +30,16 @@ public class NewsSenderApp {
     private static void ImitationSendingNews(ScheduledExecutorService scheduledExecutorService) {
         scheduledExecutorService.scheduleAtFixedRate(() -> {
             buildNewsMsg("php.developer.news", "News about PHP");
-        }, 10, 5, TimeUnit.SECONDS);
+        }, 10, 10, TimeUnit.SECONDS);
         scheduledExecutorService.scheduleAtFixedRate(() -> {
             buildNewsMsg("java.forum.news", "News about JAVA");
-        }, 3, 5, TimeUnit.SECONDS);
+        }, 15, 20, TimeUnit.SECONDS);
         scheduledExecutorService.scheduleAtFixedRate(() -> {
             buildNewsMsg("python.news", "News about Python");
-        }, 6, 10, TimeUnit.SECONDS);
+        }, 20, 30, TimeUnit.SECONDS);
         scheduledExecutorService.scheduleAtFixedRate(() -> {
             buildNewsMsg("vb6.news.grandfathers.language", "News about Microsoft Visual Basic 6.0");
-        }, 6, 10, TimeUnit.SECONDS);
+        }, 15, 40, TimeUnit.SECONDS);
 
     }
 

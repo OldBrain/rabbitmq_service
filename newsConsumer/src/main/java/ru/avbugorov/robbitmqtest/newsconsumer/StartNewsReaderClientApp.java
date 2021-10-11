@@ -18,12 +18,9 @@ public class StartNewsReaderClientApp {
 
 
         try {
-
-
             while (1 < 2) {
                 subscriptionMenu();
                 newsSubscribers.subscribe(routingKeySet);
-
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -32,16 +29,12 @@ public class StartNewsReaderClientApp {
 
     private static void subscriptionMenu() {
         String key;
-
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("1. команда set_topic <key> для подписки");
         System.out.println("2. команда set_topic <key> для отписки");
         System.out.println("3. команда exit для завершения");
-
         System.out.print("Введите команду например  <<set_topic php>> ");
         key = scanner.nextLine();
-
 
         if (key.split(" ")[0].equals("set_topic")) {
             String setKey = key.split(" ")[1];
